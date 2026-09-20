@@ -383,7 +383,7 @@ func (e *Engine) Restore(snap *Snapshot) {
 
 func (e *Engine) restoreLevel(book *orderBook, lv domain.DepthLevel) {
 	// 快照只保留聚合深度，活跃订单明细在内存版中随进程存活；
-	// 生产环境恢复时需回放 Kafka 中的未快照订单（见技术方案 5.1）
+	// 生产环境恢复时需回放 Kafka 中的未快照订单
 	if lv.QtyUnits <= 0 {
 		return
 	}
