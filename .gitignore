@@ -1,0 +1,14 @@
+**/.idea
+
+.vscode/
+
+*.log
+*.tmp
+*.out
+
+*.ex
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
