@@ -12,3 +12,8 @@
 *.so
 *.dylib
 *.test
+*.exe
+
+**/.qoder
+**/.claude
+**/.workbuddy
